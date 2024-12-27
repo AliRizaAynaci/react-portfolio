@@ -18,6 +18,15 @@ const Projects = () => {
   // GitHub projeleri
   const featuredProjects = [
     {
+      title: 'React Portfolio',
+      description: 'Interactive portfolio website built with React, Material-UI and Framer Motion. Features terminal-like interface and modern design.',
+      image: 'https://raw.githubusercontent.com/AliRizaAynaci/react-portfolio/main/screenshot.png',
+      tech: ['React', 'Material-UI', 'Framer Motion', 'Vercel'],
+      github: 'https://github.com/AliRizaAynaci/react-portfolio',
+      demo: 'https://github.com/AliRizaAynaci/react-portfolio',
+      type: 'Frontend Development'
+    },
+    {
       title: 'E-commerce Backend',
       description: 'RESTful API for e-commerce platform functionalities, including customer, product, cart, and order management.',
       image: 'https://raw.githubusercontent.com/AliRizaAynaci/ecommerce-backend/main/screenshot.png',
@@ -52,10 +61,11 @@ const Projects = () => {
       const openMatch = command.match(/^open\s+(-?\d+)$/);
 
       if (openMatch) {
-        const index = parseInt(openMatch[1]) - 1; // 1-tabanlıdan 0-tabanlıya çevir
+        const index = parseInt(openMatch[1]) - 1;
         if (index >= 0 && index < featuredProjects.length) {
+          // GitHub repo URL'ine yönlendir
           window.open(featuredProjects[index].github, '_blank');
-          output = `Opening: ${featuredProjects[index].title}`;
+          output = `Opening: ${featuredProjects[index].title} (GitHub Repository)`;
         } else {
           output = `Error: Project #${index + 1} not found`;
         }
