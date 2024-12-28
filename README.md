@@ -5,7 +5,6 @@ A modern, interactive portfolio website built with React, featuring a terminal-l
 ## 🚀 Features
 
 - Interactive Terminal Interface
-- Dark/Light Theme
 - Responsive Design
 - Blog Integration with Medium
 - Project Showcase
