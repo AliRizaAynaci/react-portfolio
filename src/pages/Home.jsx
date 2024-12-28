@@ -278,6 +278,17 @@ const Home = () => {
                 >
                   Backend Developer
                 </Typography>
+
+                {/* Sadece bu kısım eklendi */}
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    color: 'rgba(255,255,255,0.7)',
+                    mb: 4
+                  }}
+                >
+                  Computer Engineering at Erciyes University
+                </Typography>
               </motion.div>
             </Grid>
 
@@ -465,7 +476,7 @@ const Home = () => {
                     </Box>
                   </Box>
                 </Paper>
-              </motion.div>
+              </motion.div> 
             </Grid>
           </Grid>
         </Container>
